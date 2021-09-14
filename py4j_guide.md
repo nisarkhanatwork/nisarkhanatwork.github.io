@@ -114,4 +114,4 @@ print(c.fun2_py(2, 3))
 
 9. How does this work ?
 
-![](java_py4j.png)
+![](./2021/py4j_tut/java_py4j.png)
