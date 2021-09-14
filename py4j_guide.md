@@ -1,7 +1,11 @@
 ### How to use java code from python programs using py4j?
+
+How does this work ?
+
+![](./2021/py4j_tut/java_py4j.png)
+
 Consider your java class to be the following in a file [YourJavaClass.java](./2021/py4j_tut/YourJavaClass.java):
 
-    ```
     public class YourJavaClass {
         private int i, j, k, l, m;
 
@@ -30,8 +34,6 @@ Consider your java class to be the following in a file [YourJavaClass.java](./20
         }
 
     }
-    ```
-
 
 1. How to write a wrapper class EntryPoint (in file [EntryPoint.java](./2021/py4j_tut/EntryPoint.java)) around your java class, YourJavaClass?
 
@@ -112,6 +114,3 @@ Consider your java class to be the following in a file [YourJavaClass.java](./20
 
     ```   ./py_interface.py```
 
-9. How does this work ?
-
-![](./2021/py4j_tut/java_py4j.png)
