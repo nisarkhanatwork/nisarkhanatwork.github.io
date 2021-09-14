@@ -89,7 +89,7 @@ print(c.fun1_py())
 print(c.fun2_py(2, 3))
 ```
 
-3. Do we need  py4j-0.10.9.jar ? 
+3. Do we need  [py4j-0.10.9.jar](py4j-0.10.9.jar) ? 
    Yes. You need to download it (please check for the latest version and use it.)
 
 4. Where can I store the downloaded py4j-0.10.9.jar file ?
