@@ -92,6 +92,7 @@ Consider your java class to be the following in a file [YourJavaClass.java](./20
     ```
 
 3. Do we need  [py4j-0.10.9.jar](./2021/py4j_tut/py4j-0.10.9.jar) ? 
+
    Yes. You need to download it (please check for the latest version and use it.)
 
 4. Where can I store the downloaded py4j-0.10.9.jar file ?
