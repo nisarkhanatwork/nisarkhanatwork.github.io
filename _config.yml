@@ -56,9 +56,6 @@ defaults:
       layout: single
       share: true
       related: true
-      
-defaults:
-  # _pages
   - scope:
       path: ""
       type: pages
@@ -66,3 +63,4 @@ defaults:
       show_date: true
       read_time: true
       comments: true
+      
