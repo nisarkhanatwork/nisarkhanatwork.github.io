@@ -1,3 +1,64 @@
 theme: jekyll-theme-minimal
-title: ["Welcome!"]
-description: ["Nisar's blogs."]
+title: "Welcome!"
+description: "Nisar's blogs."
+logo: "/assets/images/1000.png"
+search: true
+paginate: 5
+timezone: Asia/Kolkata
+social:
+  type: "Person" 
+  name: "Nisar Khan"
+  links:
+    - "https://twitter.com/nisarkhanatwork"
+    - "https://www.facebook.com/100054828031538"
+    - "https://www.linkedin.com/in/nisar-khan-6b34aa14"
+
+google:
+  search_engine_id: "c51d87e52a71febe5"
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "nisarkhanatwork"
+author:
+  name: "Nisar Khan"
+  avatar: "/assets/images/1000.jpg"
+  bio: "I am a **technician** interested in AI." # Note: Markdown is allowed
+  location: "Guntur/Andhra Pradesh/India"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/nisarkhanatwork"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/nisarkhanatwork"
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/nisarkhanatwork"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/nisarkhanatwork"
+      
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
+      comments: true
+      layout: single
+      share: true
+      related: true
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      show_date: true
+      read_time: true
+      comments: true
+      layout: single
