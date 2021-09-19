@@ -52,8 +52,13 @@ Remember that the latest in research related to meta-learning is called bilevel 
 References: 
 
 1) ![https://www.deeplearningbook.org](https://www.deeplearningbook.org)
+
 2) ![https://en.wikipedia.org/wiki/Expert_system](https://en.wikipedia.org/wiki/Expert_system)
+
 3) ![https://www.cs.toronto.edu/~rgrosse/courses/csc2541_2021/](https://www.cs.toronto.edu/~rgrosse/courses/csc241_2021/)
+ 
 4) ![https://see.stanford.edu/materials/aimlcs229/ML-advice.pdf](https://see.stanford.edu/materials/aimlcs229/ML-advice.pdf)
+
 5) ![https://engineering.purdue.edu/~engelb/abe565/es.htm](https://engineering.purdue.edu/~engelb/abe565/es.htm)
+
 6) ![http://dssresources.com/faq/index.php?action=artikel&id=230](http://dssresources.com/faq/index.php?action=artikel&id=230)
