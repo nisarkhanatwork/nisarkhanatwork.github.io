@@ -1,5 +1,6 @@
 ## Expert Systems for hyperparameter tuning and “telephone test”
 ![](es/expert_sys1.png)
+
 Expert systems[ESs] are developed and used in medical diagnosis which involves taking patient’s symptoms and laboratory tests as inputs. These systems are used when the expertise required is “highly valued and complex”[![2](https://en.wikipedia.org/wiki/Expert_system)]. Currently, using Deep Learning to solve problems is also a “highly valued and complex” task. Also [![5](https://engineering.purdue.edu/~engelb/abe565/es.htm)] says: “Incompleteness of information is characteristic of problems suitable for solution with ESs.”
 
 The following points encouraged the study to build ESs for Deep Learning model tuning:
