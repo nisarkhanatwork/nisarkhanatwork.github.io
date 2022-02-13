@@ -1,4 +1,4 @@
-## Notes to select optimizers for your Deep Learning models based on ![[1]](https://ruder.io/optimizing-gradient-descent/index.html)
+## Notes to select optimizers for your Deep Learning models based on Sebastian Ruder's article in ruder.io
 
 ### Introduction:
 
