@@ -25,7 +25,7 @@
 2) It is fast and can be used for online learning.
 3) In mini-batch gradient descent, instead of iterating over each examples, the gradient is calculated on a batch size of n.
 
- ![Figure](docs/minibatch.png)
+ ![](notes_on_opt_alg/minibatch.png)
 
 4) Frequent updates with high variance result in high fluctuations.
 5) Fluctuations result in jumping from one local minima to the other complicating convergence.
