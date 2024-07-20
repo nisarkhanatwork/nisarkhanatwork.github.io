@@ -17,6 +17,11 @@ By validating against the telephone test, and considering the resolution with wh
 
 Remember that the latest in research related to meta-learning is called bilevel optimization ![[4]](https://www.cs.toronto.edu/~rgrosse/courses/csc2541_2021/). Until we get fruitful results from meta-learning,  we can depend on guides like “XYZ's Principles and Practice of Deep Learning” along with the help of institutions that give a stint on this so that Deep Learning enthusiasts can get up to speed just like they do in the field of medicine.
 
+Edited:July 20, 2024
+-------------
+I guess by now we have AI agents doing the hyperparameter tuning:
+![](es/future.jpg)
+
 References: 
 
 1) ![https://en.wikipedia.org/wiki/Expert_system](https://en.wikipedia.org/wiki/Expert_system)
