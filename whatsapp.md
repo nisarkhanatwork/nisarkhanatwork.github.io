@@ -31,10 +31,10 @@ OS: Windows Host OS ( for Phone1), Ubuntu Guest OS (for Phone 2)
 
 Code:
 -----
-The two scripts, Sender: ![./wa_final.py](wa_final.py) and Receiver: ![wa_rec.py](wa_rec.py) are a proof of concept of this covert channel. 
+The two scripts, Sender: ![./wa_final.py](./whatsapp/wa_final.py) and Receiver: ![wa_rec.py](./whatsapp/wa_rec.py) are a proof of concept of this covert channel. 
 Preview of the video showing the scripts in action is: 
 
-![whatsapp scripts in action](./whatsapp_inaction.gif)
+![whatsapp scripts in action](./whatsapp/whatsapp_inaction.gif)
 
 Impact:
 -------
