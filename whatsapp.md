@@ -31,7 +31,7 @@ OS: Windows Host OS ( for Phone1), Ubuntu Guest OS (for Phone 2)
 
 Code:
 -----
-The two scripts, Sender: ![./wa_final.py](./whatsapp/wa_final.py) and Receiver: ![wa_rec.py](./whatsapp/wa_rec.py) are a proof of concept of this covert channel. 
+The two scripts, Sender: ![./wa_final.py](./whatsapp/wa_final.py) and Receiver: ![wa_rec.py](./whatsapp/wa_rec_final.py) are a proof of concept of this covert channel. 
 	
 A glimpse of steganography in action: 
 
