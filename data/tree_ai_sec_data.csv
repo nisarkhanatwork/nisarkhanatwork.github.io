@@ -1,1 +1,323 @@
-
+RISK,DESCRIPTION,MITIGATION CONTROL ,DESCRIPTION
+RAW DATA,Insufficient access controls,DASF 1,SSO with IdP and MFA
+RAW DATA,Insufficient access controls,DASF 2,Sync users and groups
+RAW DATA,Insufficient access controls,DASF 3,Restrict access using IP access lists
+RAW DATA,Insufficient access controls,DASF 4,Restrict access using private link
+RAW DATA,Insufficient access controls,DASF 51,Share data and AI assets securely
+RAW DATA,Missing data classification,DASF 6,Classify data
+RAW DATA,Poor data quality,DASF 7,Enforce data quality checks on batch and streaming datasets
+RAW DATA,Poor data quality,DASF 21,Monitor data and AI system from a single pane of glass
+RAW DATA,Poor data quality,DASF 36,Set up monitoring alerts
+RAW DATA,Ineffective storage and encryption,DASF 8,Encrypt data at rest
+RAW DATA,Ineffective storage and encryption,DASF 9,Encrypt data in transit
+RAW DATA,Ineffective storage and encryption,DASF 5,Control access to data and other objects
+RAW DATA,Lack of data versioning,DASF 10,Version data
+RAW DATA,Insufficient data lineage,DASF 11,Capture and view data lineage
+RAW DATA,Insufficient data lineage,DASF 51,Share data and AI assets securely
+RAW DATA,Lack of data trustworthiness,DASF 10,Version data
+RAW DATA,Lack of data trustworthiness,DASF 51,Share data and AI assets securely
+RAW DATA,Data legal,DASF 12,Delete records from datasets
+RAW DATA,Data legal,DASF 29,Build MLOps workflows
+RAW DATA,Data legal,DASF 27,Pretrain a large language model (LLM)
+RAW DATA,Stale data,DASF 13,Use near real-time data
+RAW DATA,Stale data,DASF 7,Enforce data quality checks on batch and streaming datasets
+RAW DATA,Lack of data access logs,DASF 14,Audit actions performed on datasets
+DATA PREP,Preprocessing integrity,DASF 1,SSO with IdP and MFA
+DATA PREP,Preprocessing integrity,DASF 2,Sync users and groups
+DATA PREP,Preprocessing integrity,DASF 3,Restrict access using IP access lists
+DATA PREP,Preprocessing integrity,DASF 4,Restrict access using private link
+DATA PREP,Preprocessing integrity,DASF 5,Control access to data and other objects
+DATA PREP,Preprocessing integrity,DASF 7,Enforce data quality checks on batch and streaming datasets
+DATA PREP,Preprocessing integrity,DASF 11,Capture and view data lineage
+DATA PREP,Preprocessing integrity,DASF 15,Explore datasets and identify problems
+DATA PREP,Preprocessing integrity,DASF 52,Source code control
+DATA PREP,Preprocessing integrity,DASF 16,Secure model features
+DATA PREP,Preprocessing integrity,DASF 42,Employ data-centric MLOps and LLMOps
+DATA PREP,Feature manipulation,DASF 1,SSO with IdP and MFA
+DATA PREP,Feature manipulation,DASF 2,Sync users and groups
+DATA PREP,Feature manipulation,DASF 3,Restrict access using IP access lists
+DATA PREP,Feature manipulation,DASF 4,Restrict access using private link
+DATA PREP,Feature manipulation,DASF 16,Secure model features
+DATA PREP,Feature manipulation,DASF 42,Employ data-centric MLOps and LLMOps
+DATA PREP,Raw data criteria,DASF 1,SSO with IdP and MFA
+DATA PREP,Raw data criteria,DASF 2,Sync users and groups
+DATA PREP,Raw data criteria,DASF 3,Restrict access using IP access lists
+DATA PREP,Raw data criteria,DASF 4,Restrict access using private link
+DATA PREP,Raw data criteria,DASF 43,Use access control lists
+DATA PREP,Raw data criteria,DASF 42,Employ data-centric MLOps and LLMOps
+DATA PREP,Adversarial partitions,DASF 1,SSO with IdP and MFA
+DATA PREP,Adversarial partitions,DASF 2,Sync users and groups
+DATA PREP,Adversarial partitions,DASF 3,Restrict access using IP access lists
+DATA PREP,Adversarial partitions,DASF 4,Restrict access using private link
+DATA PREP,Adversarial partitions,DASF 17,Track and reproduce the training data used for ML model training
+DATA PREP,Adversarial partitions,DASF 42,Employ data-centric MLOps and LLMOps
+DATASETS,Data poisoning,DASF 1,SSO with IdP and MFA
+DATASETS,Data poisoning,DASF 2,Sync users and groups
+DATASETS,Data poisoning,DASF 3,Restrict access using IP access lists
+DATASETS,Data poisoning,DASF 4,Restrict access using private link
+DATASETS,Data poisoning,DASF 5,Control access to data and other objects
+DATASETS,Data poisoning,DASF 7,Enforce data quality checks on batch and streaming datasets
+DATASETS,Data poisoning,DASF 11,Capture and view data lineage
+DATASETS,Data poisoning,DASF 16,Secure model features
+DATASETS,Data poisoning,DASF 17,Track and reproduce the training data used for ML model training
+DATASETS,Data poisoning,DASF 51,Share data and AI assets securely
+DATASETS,Data poisoning,DASF 14,Audit actions performed on datasets
+DATASETS,Ineffective storage and encryption,DASF 8,Encrypt data at rest
+DATASETS,Ineffective storage and encryption,DASF 9,Encrypt data in transit
+DATASETS,Ineffective storage and encryption,DASF 5,Control access to data and other objects
+DATASETS,Label flipping,DASF 8,Encrypt data at rest
+DATASETS,Label flipping,DASF 9,Encrypt data in transit
+DATASETS,Label flipping,DASF 5,Control access to data and other objects
+GOVERNANCE,"Lack of traceability and
+transparency of model assets",DASF 5,Control access to data and other objects
+GOVERNANCE,"Lack of traceability and
+transparency of model assets",DASF 7,Enforce data quality checks on batch and streaming datasets
+GOVERNANCE,"Lack of traceability and
+transparency of model assets",DASF 11,Capture and view data lineage
+GOVERNANCE,"Lack of traceability and
+transparency of model assets",DASF 16,Secure model features
+GOVERNANCE,"Lack of traceability and
+transparency of model assets",DASF 17,Track and reproduce the training data used for ML model training
+GOVERNANCE,"Lack of traceability and
+transparency of model assets",DASF 18,Govern model assets
+GOVERNANCE,Lack of end-to-end ML lifecycle,DASF 19,Manage end-to-end machine learning lifecycle
+GOVERNANCE,Lack of end-to-end ML lifecycle,DASF 42,Employ data-centric MLOps and LLMOps
+GOVERNANCE,Lack of end-to-end ML lifecycle,DASF 21,Monitor data and AI system from a single pane of glass
+ALGORITHMS,"Lack of tracking and reproducibility
+of experiments",DASF 20,Track ML training runs
+ALGORITHMS,"Lack of tracking and reproducibility
+of experiments",DASF 42,Employ data-centric MLOps and LLMOps
+ALGORITHMS,Model drift,DASF 16,Secure model features
+ALGORITHMS,Model drift,DASF 17,Track and reproduce the training data used for ML model training
+ALGORITHMS,Model drift,DASF 21,Monitor data and AI system from a single pane of glass
+ALGORITHMS,Hyperparameters stealing,DASF 20,Track ML training runs
+ALGORITHMS,Hyperparameters stealing,DASF 42,Employ data-centric MLOps and LLMOps
+ALGORITHMS,Hyperparameters stealing,DASF 43,Use access control lists
+ALGORITHMS,Malicious libraries,DASF 53,Third-party library control
+EVALUATION,Evaluation data poisoning,DASF 1,SSO with IdP and MFA
+EVALUATION,Evaluation data poisoning,DASF 2,Sync users and groups
+EVALUATION,Evaluation data poisoning,DASF 3,Restrict access using IP access lists
+EVALUATION,Evaluation data poisoning,DASF 4,Restrict access using private link
+EVALUATION,Evaluation data poisoning,DASF 5,Control access to data and other objects
+EVALUATION,Evaluation data poisoning,DASF 7,Enforce data quality checks on batch and streaming datasets
+EVALUATION,Evaluation data poisoning,DASF 11,Capture and view data lineage
+EVALUATION,Evaluation data poisoning,DASF 42,Employ data-centric MLOps and LLMOps
+EVALUATION,Evaluation data poisoning,DASF 44,Triggering actions in response to a specific event
+EVALUATION,Evaluation data poisoning,DASF 45,Evaluate models
+EVALUATION,Evaluation data poisoning,DASF 49,Automate LLM evaluation
+EVALUATION,Insufficient evaluation data,DASF 22,"Build models with all representative, accurate and relevant data sources"
+EVALUATION,Insufficient evaluation data,DASF 25,Use retrieval augmented generation (RAG) with large language models (LLMs)
+EVALUATION,Insufficient evaluation data,DASF 45,Evaluate models
+EVALUATION,Insufficient evaluation data,DASF 47,Compare LLM outputs on set prompts
+MODEL,"Backdoor machine learning/
+Trojaned model",DASF 1,SSO with IdP and MFA
+MODEL,"Backdoor machine learning/
+Trojaned model",DASF 5,Control access to data and other objects
+MODEL,"Backdoor machine learning/
+Trojaned model",DASF 19,Manage end-to-end machine learning lifecycle
+MODEL,"Backdoor machine learning/
+Trojaned model",DASF 23,"Register, version, approve, promote and deploy model"
+MODEL,"Backdoor machine learning/
+Trojaned model",DASF 34,Run models in multiple layers of isolation
+MODEL,"Backdoor machine learning/
+Trojaned model",DASF 42,Employ data-centric MLOps and LLMOps
+MODEL,"Backdoor machine learning/
+Trojaned model",DASF 43,Use access control lists
+MODEL,Model assets leak,DASF 1,SSO with IdP and MFA
+MODEL,Model assets leak,DASF 2,Sync users and groups
+MODEL,Model assets leak,DASF 3,Restrict access using IP access lists
+MODEL,Model assets leak,DASF 4,Restrict access using private link
+MODEL,Model assets leak,DASF 5,Control access to data and other objects
+MODEL,Model assets leak,DASF 24,Control access to models and model assets
+MODEL,Model assets leak,DASF 33,Manage credentials securely
+MODEL,Model assets leak,DASF 42,Employ data-centric MLOps and LLMOps
+MODEL,ML Supply chain vulnerabilities,DASF 22,"Build models with all representative, accurate and relevant data sources"
+MODEL,ML Supply chain vulnerabilities,DASF 42,Employ data-centric MLOps and LLMOps
+MODEL,ML Supply chain vulnerabilities,DASF 45,Evaluate models
+MODEL,ML Supply chain vulnerabilities,DASF 47,Compare LLM outputs on set prompts
+MODEL,ML Supply chain vulnerabilities,DASF 48,Use hardened Runtime for Machine Learning
+MODEL,ML Supply chain vulnerabilities,DASF 52,Source code control
+MODEL,Source code control attack,DASF 52,Source code control
+MODEL,Source code control attack,DASF 53,Third-party library control
+MODEL MANAGEMENT,Model attribution,DASF 5,Control access to data and other objects
+MODEL MANAGEMENT,Model attribution,DASF 28,"Create model aliases, tags and annotations"
+MODEL MANAGEMENT,Model attribution,DASF 29,Build MLOps workflows
+MODEL MANAGEMENT,Model attribution,DASF 51,Share data and AI assets securely
+MODEL MANAGEMENT,Model theft,DASF 1,SSO with IdP and MFA
+MODEL MANAGEMENT,Model theft,DASF 2,Sync users and groups
+MODEL MANAGEMENT,Model theft,DASF 3,Restrict access using IP access lists
+MODEL MANAGEMENT,Model theft,DASF 4,Restrict access using private link
+MODEL MANAGEMENT,Model theft,DASF 5,Control access to data and other objects
+MODEL MANAGEMENT,Model theft,DASF 24,Control access to models and model assets
+MODEL MANAGEMENT,Model theft,DASF 30,Encrypt models
+MODEL MANAGEMENT,Model theft,DASF 31,Secure model serving endpoints
+MODEL MANAGEMENT,Model theft,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL MANAGEMENT,Model theft,DASF 33,Manage credentials securely
+MODEL MANAGEMENT,Model theft,DASF 51,Share data and AI assets securely
+MODEL MANAGEMENT,"Model lifecycle without HITL
+(human-in-the-loop)",DASF 5,Control access to data and other objects
+MODEL MANAGEMENT,"Model lifecycle without HITL
+(human-in-the-loop)",DASF 24,Control access to models and model assets
+MODEL MANAGEMENT,"Model lifecycle without HITL
+(human-in-the-loop)",DASF 28,"Create model aliases, tags and annotations"
+MODEL MANAGEMENT,"Model lifecycle without HITL
+(human-in-the-loop)",DASF 29,Build MLOps workflows
+MODEL MANAGEMENT,"Model lifecycle without HITL
+(human-in-the-loop)",DASF 42,Employ data-centric MLOps and LLMOps
+MODEL MANAGEMENT,Model inversion,DASF 1,SSO with IdP and MFA
+MODEL MANAGEMENT,Model inversion,DASF 2,Sync users and groups
+MODEL MANAGEMENT,Model inversion,DASF 3,Restrict access using IP access lists
+MODEL MANAGEMENT,Model inversion,DASF 4,Restrict access using private link
+MODEL MANAGEMENT,Model inversion,DASF 5,Control access to data and other objects
+MODEL MANAGEMENT,Model inversion,DASF 24,Control access to models and model assets
+MODEL MANAGEMENT,Model inversion,DASF 30,Encrypt models
+MODEL MANAGEMENT,Model inversion,DASF 31,Secure model serving endpoints
+MODEL MANAGEMENT,Model inversion,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 1,SSO with IdP and MFA
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 2,Sync users and groups
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 3,Restrict access using IP access lists
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 4,Restrict access using private link
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 5,Control access to data and other objects
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 24,Control access to models and model assets
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 30,Encrypt models
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 31,Secure model serving endpoints
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE REQUESTS,Prompt inject,DASF 46,Store and retrieve embeddings securely
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 1,SSO with IdP and MFA
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 2,Sync users and groups
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 3,Restrict access using IP access lists
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 4,Restrict access using private link
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 5,Control access to data and other objects
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 24,Control access to models and model assets
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 30,Encrypt models
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 31,Secure model serving endpoints
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE REQUESTS,Model inversion,DASF 46,Store and retrieve embeddings securely
+MODEL SERVING — INFERENCE REQUESTS,Model breakout,DASF 34,Run models in multiple layers of isolation
+MODEL SERVING — INFERENCE REQUESTS,Model breakout,DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE REQUESTS,Looped input,DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 1,SSO with IdP and MFA
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 2,Sync users and groups
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 3,Restrict access using IP access lists
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 4,Restrict access using private link
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 5,Control access to data and other objects
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 24,Control access to models and model assets
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 28,"Create model aliases, tags and annotations"
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 30,Encrypt models
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 31,Secure model serving endpoints
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 45,Evaluate models
+MODEL SERVING — INFERENCE REQUESTS,Infer training data membership,DASF 46,Store and retrieve embeddings securely
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 1,SSO with IdP and MFA
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 2,Sync users and groups
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 3,Restrict access using IP access lists
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 4,Restrict access using private link
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 5,Control access to data and other objects
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 24,Control access to models and model assets
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 28,"Create model aliases, tags and annotations"
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 30,Encrypt models
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 31,Secure model serving endpoints
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 45,Evaluate models
+MODEL SERVING — INFERENCE REQUESTS,Discover ML model ontology,DASF 46,Store and retrieve embeddings securely
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 1,SSO with IdP and MFA
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 2,Sync users and groups
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 3,Restrict access using IP access lists
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 4,Restrict access using private link
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 5,Control access to data and other objects
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 24,Control access to models and model assets
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 30,Encrypt models
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 31,Secure model serving endpoints
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE REQUESTS,Denial of service (DoS),DASF 46,Store and retrieve embeddings securely
+MODEL SERVING — INFERENCE REQUESTS,LLM hallucinations,DASF 25,Use retrieval augmented generation (RAG) with large language models (LLMs)
+MODEL SERVING — INFERENCE REQUESTS,LLM hallucinations,DASF 26,Fine-tune large language models (LLMs)
+MODEL SERVING — INFERENCE REQUESTS,LLM hallucinations,DASF 27,Pretrain a large language model (LLM)
+MODEL SERVING — INFERENCE REQUESTS,LLM hallucinations,DASF 46,Store and retrieve embeddings securely
+MODEL SERVING — INFERENCE REQUESTS,LLM hallucinations,DASF 49,Automate LLM evaluation
+MODEL SERVING — INFERENCE REQUESTS,Input resource control,DASF 1,SSO with IdP and MFA
+MODEL SERVING — INFERENCE REQUESTS,Input resource control,DASF 2,Sync users and groups
+MODEL SERVING — INFERENCE REQUESTS,Input resource control,DASF 3,Restrict access using IP access lists
+MODEL SERVING — INFERENCE REQUESTS,Input resource control,DASF 4,Restrict access using private link
+MODEL SERVING — INFERENCE REQUESTS,Input resource control,DASF 5,Control access to data and other objects
+MODEL SERVING — INFERENCE REQUESTS,Input resource control,DASF 46,Store and retrieve embeddings securely
+MODEL SERVING — INFERENCE REQUESTS,"Accidental exposure of
+unauthorized data to models",DASF 1,SSO with IdP and MFA
+MODEL SERVING — INFERENCE REQUESTS,"Accidental exposure of
+unauthorized data to models",DASF 2,Sync users and groups
+MODEL SERVING — INFERENCE REQUESTS,"Accidental exposure of
+unauthorized data to models",DASF 3,Restrict access using IP access lists
+MODEL SERVING — INFERENCE REQUESTS,"Accidental exposure of
+unauthorized data to models",DASF 4,Restrict access using private link
+MODEL SERVING — INFERENCE REQUESTS,"Accidental exposure of
+unauthorized data to models",DASF 5,Control access to data and other objects
+MODEL SERVING — INFERENCE REQUESTS,"Accidental exposure of
+unauthorized data to models",DASF 16,Secure model features
+MODEL SERVING — INFERENCE REQUESTS,"Accidental exposure of
+unauthorized data to models",DASF 46,Store and retrieve embeddings securely
+MODEL SERVING — INFERENCE RESPONSE,"Lack of audit and monitoring
+inference quality",DASF 35,Track model performance
+MODEL SERVING — INFERENCE RESPONSE,"Lack of audit and monitoring
+inference quality",DASF 36,Set up monitoring alerts
+MODEL SERVING — INFERENCE RESPONSE,"Lack of audit and monitoring
+inference quality",DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE RESPONSE,Output manipulation,DASF 30,Encrypt models
+MODEL SERVING — INFERENCE RESPONSE,Output manipulation,DASF 31,Secure model serving endpoints
+MODEL SERVING — INFERENCE RESPONSE,Output manipulation,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 1,SSO with IdP and MFA
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 2,Sync users and groups
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 3,Restrict access using IP access lists
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 4,Restrict access using private link
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 5,Control access to data and other objects
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 24,Control access to models and model assets
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 28,"Create model aliases, tags and annotations"
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 30,Encrypt models
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 31,Secure model serving endpoints
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model ontology,DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 1,SSO with IdP and MFA
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 2,Sync users and groups
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 3,Restrict access using IP access lists
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 4,Restrict access using private link
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 5,Control access to data and other objects
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 24,Control access to models and model assets
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 28,"Create model aliases, tags and annotations"
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 30,Encrypt models
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 31,Secure model serving endpoints
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 37,Set up inference tables for monitoring and debugging models
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 45,Evaluate models
+MODEL SERVING — INFERENCE RESPONSE,Discover ML model family,DASF 46,Store and retrieve embeddings securely
+MODEL SERVING — INFERENCE RESPONSE,Black-box attacks,DASF 30,Encrypt models
+MODEL SERVING — INFERENCE RESPONSE,Black-box attacks,DASF 31,Secure model serving endpoints
+MODEL SERVING — INFERENCE RESPONSE,Black-box attacks,DASF 32,"Streamline the usage and management of various
+large language model (LLM) providers"
+OPERATIONS,"Lack of MLOps — repeatable
+enforced standards",DASF 42,Employ data-centric MLOps and LLMOps
+OPERATIONS,"Lack of MLOps — repeatable
+enforced standards",DASF 44,Triggering actions in response to a specific event
+OPERATIONS,"Lack of MLOps — repeatable
+enforced standards",DASF 45,Evaluate models
+PLATFORM,Lack of vulnerability management,DASF 38,Platform security — vulnerability management
+PLATFORM,"Lack of penetration testing
+and bug bounty",DASF 39,Platform security — Incident Response Team
+PLATFORM,Lack of incident response,DASF 39,Platform security — Incident Response Team
+PLATFORM,Unauthorized privileged access,DASF 40,Platform security — internal access
+PLATFORM,"Poor security in the software
+development lifecycle",DASF 41,Platform security — secure SDLC
+PLATFORM,Lack of compliance,DASF 50,Platform compliance
