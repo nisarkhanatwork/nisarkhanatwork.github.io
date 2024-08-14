@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>MAPPING THE DATABRICKS AI SECURITY FRAMEWORK</title>
+</head>
+    <style>
+
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 3px;
+	}
+
+	.node text { font: 12px sans-serif; }
+
+	.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 2px;
+	}
+	
+    </style>
+<div style="position: absolute; top: 10px; left: 10px; font: 15px Arial, sans-serif; color: #000000;">MAPPING THE DATABRICKS AI SECURITY FRAMEWORK</div>
+
+<div style="position: absolute; top: 40px; left: 10px;"><a href="https://www.databricks.com/sites/default/files/2024-03/databricks-ai-security-framework-dasf-whitepaper-v4-final.pdf" target="_blank" style="text-decoration: none; font: 10px Arial, sans-serif; color: #3E4348; cursor: pointer;">DOCUMENT</a></div>
+
+<body><div style="position: absolute; top: 70px; left: 10px;"><button onclick="collapseAll()" style="background: none!important; border: none; padding: 0!important; font: 10px Arial, sans-serif; color: #4682B4; cursor: pointer;">COLLAPSE</button></div>
+
+<div style="position: absolute; top: 90px; left: 10px;"><button onclick="expandAll()" style="background: none!important; border: none; padding: 0!important; font: 10px Arial, sans-serif; color: #4682B4; cursor: pointer;">EXPAND</button></div>
+<!--&lt;!&ndash;  <label><input type="radio" name="mode" value="uncollapse" checked> Uncollapse</label>&ndash;&gt;-->
+<!--  <label><input type="radio" name="mode" id="collapseOption"> Collapse</label>-->
+<!--</form>-->
+  
+<script>
+function expandAll() {
+    expand(root);
+    update(root);
+}
+
+function expand(d) {
+    if(d._children) {
+        d.children = d._children;
+        d._children = null;
+    }
+    if(d.children)
+        d.children.forEach(expand);
+}
+</script>
+
+
+<!-- load the d3.js library -->	
+<script src="https://d3js.org/d3.v3.min.js"></script>
+	
+<script>
+
+// ************** Generate the tree diagram	 *****************
+var margin = {top: 95, right: 120, bottom: 20, left: 120},
+    width = 1200 - margin.right - margin.left,
+    height = 8102 - margin.top - margin.bottom;
+
+var i = 0,
+    duration = 750,
+    root;
+
+var tree = d3.layout.tree();
+
+function updateHeight() {
+  var levelWidth = [1];
+  var childCount = function(level, n) {
+    if(n.children && n.children.length > 0) {
+      if(levelWidth.length <= level + 1) levelWidth.push(0);
+      levelWidth[level+1] += n.children.length;
+      n.children.forEach(function(d) {
+        childCount(level + 1, d);
+      });
+    }
+  };
+  childCount(0, root);
+  var newHeight = d3.max(levelWidth) * 40; // 40 pixels per line
+  tree = tree.size([newHeight, width]);
+}
+
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// load the external data
+d3.csv("data/tree_ai_sec_data.csv", function(error, flare) {
+
+// *********** Convert flat data into a nice tree ***************
+ if (error) throw error;
+
+  root = flare;
+
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+
+    // if(document.getElementById('collapseOption').checked) {
+        // Collapse after the second level if the radio button is checked
+    //     root.children.forEach(collapse);
+    //     // root.children.forEach(collapse);
+    //     height = Math.min(1000, height);
+    //     update(root);
+    // } else {
+        update(root);
+
+  // };
+});
+
+d3.select(self.frameElement).style("height", "800px");
+
+function wordwrap2(text) {
+  // Check if text length is greater than 50 characters
+  if (text.length > 50) {
+    let lines = text.split(' ');
+    let lineLength = lines.length;
+    let middleIndex = Math.floor(lineLength / 2);
+    return [lines.slice(0, middleIndex).join(' '), lines.slice(middleIndex).join(' ')];
+  } else {
+    // Return the original text as an array if you want consistency in return type
+    return [text]; // Now always returns an array for consistency
+  }
+}
+
+function update(source) {
+
+  // Compute the new tree layout.
+    updateHeight();
+var nodes = tree.nodes(root).reverse(),
+      links = tree.links(nodes);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) {if (d.depth <= 2) {d.y = d.depth * 180; } else {d.y = d.depth * 220; } });
+
+  // Update the nodes…
+  var node = svg.selectAll("g.node")
+      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", click);
+
+  nodeEnter.append("circle")
+      .attr("r", 1e-6)
+      .style("fill", function(d) { return d.size ? "#fff" : "lightsteelblue" ; });
+
+
+
+  nodeEnter.append("text")
+      .attr("x", function(d) {if (d.depth < 2) {return -10} else {return 10; }})
+      // .attr("dy", 20)
+      .attr("text-anchor", function(d) { if (d.depth < 2) {return "end"} else {return "start"; }})
+      // .text(function(d) { return d.name; })
+      .style("fill-opacity", 1e-6)
+      .each(function (d) {
+           if (d.name != undefined) {
+              var lines = wordwrap2(d.name)
+              for (var i = 0; i < lines.length; i++) {
+               d3.select(this).append("tspan")
+                   .attr("dy", (i * 7) + 3)
+                   .attr("x",function(d)  {if (d.depth < 2) {return -10} else {return 10; }})
+                    .text(lines[i])
+           }
+        }});
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+      .attr("r", 4.5)
+      .style("fill", function(d) {return d.size ?  "#fff" : "lightsteelblue"; });
+
+  nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      .remove();
+
+  nodeExit.select("circle")
+      .attr("r", 1e-6);
+      // .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeExit.select("text")
+      .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = svg.selectAll("path.link")
+      .data(links, function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("path", "g")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        var o = {x: source.x0, y: source.y0};
+        return diagonal({source: o, target: o});
+      });
+
+  // Transition links to their new position.
+  link.transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+      .duration(duration)
+      .attr("d", function(d) {
+        var o = {x: source.x, y: source.y};
+        return diagonal({source: o, target: o});
+      })
+      .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+  update(d);
+}
+
+
+function collapseAll() {
+    root.children.forEach(function(child) { collapse(child); });
+    update(root);
+}
+
+function collapse(d) {
+    if(d.children) {
+        d._children = d.children;
+        d._children.forEach(collapse);
+        d.children = null;
+    }
+}
+function expandAll() {
+    expand(root);
+    update(root);
+}
+
+function expand(d) {
+    if(d._children) {
+        d.children = d._children;
+        d._children = null;
+    }
+    if(d.children)
+        d.children.forEach(expand);
+}
+
+</script>
+	
+  </body>
+</html>
