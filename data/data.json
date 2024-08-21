@@ -1,0 +1,1430 @@
+{
+	"name": "RISKS & MITIGATIONS",
+	"children":[
+   	{
+			"name":"RAW DATA",
+			"children": [
+				{
+					"name":"Insufficient access controls",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 51: Share data and AI assets securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Missing data classification",
+					"children": [
+						{
+							"name": "DASF 6: Classify data",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Poor data quality",
+					"children": [
+						{
+							"name": "DASF 7: Enforce data quality checks on batch and streaming datasets",
+							"size": 10
+						},
+						{
+							"name": "DASF 21: Monitor data and AI system from a single pane of glass",
+							"size": 10
+						},
+						{
+							"name": "DASF 36: Set up monitoring alerts",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Ineffective storage and encryption",
+					"children": [
+						{
+							"name": "DASF 8: Encrypt data at rest",
+							"size": 10
+						},
+						{
+							"name": "DASF 9: Encrypt data in transit",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Lack of data versioning",
+					"children": [
+						{
+							"name": "DASF 10: Version data",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name": "Insufficient data lineage",
+					"children": [
+						{
+							"name": "DASF 11: Capture and view data lineage",
+							"size": 10
+						},
+						{
+							"name": "DASF 51: Share data and AI assets securely",
+							"size": 10
+						}
+					]
+				},
+				{
+                    "name": "Lack of data trustworthiness",
+                    "children": [
+                        {
+                            "name": "DASF 10: Version data",
+                            "size": 10
+                        },
+						{
+							"name": "DASF 51: Share data and AI assets securely",
+							"size": 10
+						}
+                    ]
+                },
+				{
+                    "name": "Data legal",
+                    "children": [
+                        {
+                            "name": "DASF 12: Delete records from datasets",
+                            "size": 10
+                        },
+						{
+							"name": "DASF 29: Build MLOps workflows",
+							"size": 10
+						},
+						{
+							"name": "DASF 27: Pretrain a large language model (LLM)",
+							"size": 10
+						}
+                    ]
+                },
+				{
+                    "name": "Stale data",
+                    "children": [
+                        {
+                            "name": "DASF 13: Use near real-time data",
+                            "size": 10
+                        },
+						{
+							"name": "DASF 7: Enforce data quality checks on batch and streaming datasets",
+							"size": 10
+						}
+                    ]
+                }
+
+			]
+		},
+		{	"name":"DATA PREP",
+			"children": [
+				{
+					"name":"Preprocessing integrity",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 7: Enforce data quality checks on batch and streaming datasets",
+							"size": 10
+						},
+						{
+							"name": "DASF 11: Capture and view data lineage",
+							"size": 10
+						},
+						{
+							"name": "DASF 15: Explore datasets and identify problems",
+							"size": 10
+						},
+						{
+							"name": "DASF 52: Source code control",
+							"size": 10
+						},
+						{
+							"name": "DASF 16: Secure model features",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Feature manipulation",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 16: Secure model features",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Raw data criteria",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						},
+						{
+							"name": "DASF 43: Use access control lists",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Adversarial partitions",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 17: Track and reproduce the training data used for ML model training",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						}
+					]
+				}
+			]
+		},	
+		{
+			"name":"DATASETS",
+			"children": [
+				{
+					"name":"Data poisoning",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 7: Enforce data quality checks on batch and streaming datasets",
+							"size": 10
+						},
+						{
+							"name": "DASF 11: Capture and view data lineage",
+							"size": 10
+						},
+						{
+							"name": "DASF 16: Secure model features",
+							"size": 10
+						},
+						{
+							"name": "DASF 17: Track and reproduce the training data used for ML model training",
+							"size": 10
+						},
+						{
+							"name": "DASF 51: Share data and AI assets securely",
+							"size": 10
+						},
+						{
+							"name": "DASF 14: Audit actions performed on datasets",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Ineffective storage and encryption",
+					"children": [
+						{
+							"name": "DASF 8: Encrypt data at rest",
+							"size": 10
+						},
+						{
+							"name": "DASF 9: Encrypt data in transit",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Label flipping",
+					"children": [
+						{
+							"name": "DASF 8: Encrypt data at rest",
+							"size": 10
+						},
+						{
+							"name": "DASF 9: Encrypt data in transit",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						}
+					]
+				}
+			]
+		},
+		{	"name":"GOVERNANCE",
+			"children": [
+				{
+					"name":"Lack of traceability and transparency of model assets",
+					"children": [
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 7: Enforce data quality checks on batch and streaming datasets",
+							"size": 10
+						},
+						{
+							"name": "DASF 11: Capture and view data lineage",
+							"size": 10
+						},
+						{
+							"name": "DASF 16: Secure model features",
+							"size": 10
+						},
+						{
+							"name": "DASF 17: Track and reproduce the training data used for ML model training",
+							"size": 10
+						},
+						{
+							"name": "DASF 18: Govern model assets",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Lack of end-to-end ML lifecycle",
+					"children": [
+						{
+							"name": "DASF 19: Manage end-to-end machine learning lifecycle",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						},
+						{
+							"name": "DASF 21: Monitor data and AI system from a single pane of glass",
+							"size": 10
+						}
+					]
+				}
+			]
+		},	
+		{
+			"name":"ALGORITHMS",
+			"children": [
+				{
+					"name":"Lack of tracking and reproducibility of experiments",
+					"children": [
+						{
+							"name": "DASF 20: Track ML training runs",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Model drift",
+					"children": [
+						{
+							"name": "DASF 16: Secure model features",
+							"size": 10
+						},
+						{
+							"name": "DASF 17: Track and reproduce the training data used for ML model training",
+							"size": 10
+						},
+						{
+							"name": "DASF 21: Monitor data and AI system from a single pane of glass",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Hyperparameters stealing",
+					"children": [
+						{
+							"name": "DASF 20: Track ML training runs",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						},
+						{
+							"name": "DASF 43: Use access control lists",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Malicious libraries",
+					"children": [
+						{
+							"name": "DASF 53: Third-party library control",
+							"size": 10
+						}
+					]
+				}
+			]
+		},
+		{	"name":"EVALUATION",
+			"children": [
+				{
+					"name":"Evaluation data poisoning",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 7: Enforce data quality checks on batch and streaming datasets",
+							"size": 10
+						},
+						{
+							"name": "DASF 11: Capture and view data lineage",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						},
+						{
+							"name": "DASF 44: Triggering actions in response to a specific event",
+							"size": 10
+						},
+						{
+							"name": "DASF 45: Evaluate models",
+							"size": 10
+						},
+						{
+							"name": "DASF 49: Automate LLM evaluation",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Insufficient evaluation data",
+					"children": [
+						{
+							"name": "DASF 22: Build models with all representative, accurate and relevant data sources",
+							"size": 10
+						},
+						{
+							"name": "DASF 25: Use retrieval augmented generation (RAG) with large language models (LLMs)",
+							"size": 10
+						},
+						{
+							"name": "DASF 45: Evaluate models",
+							"size": 10
+						},
+						{
+							"name": "DASF 47: Compare LLM outputs on set prompts",
+							"size": 10
+						}
+					]
+				}
+			]
+		},	
+		{
+			"name":"MODEL",
+			"children": [
+				{
+					"name":"Backdoor machine learning/Trojaned model",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 19: Manage end-to-end machine learning lifecycle",
+							"size": 10
+						},
+						{
+							"name": "DASF 23: Register, version, approve, promote and deploy model",
+							"size": 10
+						},
+						{
+							"name": "DASF 34: Run models in multiple layers of isolation",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						},
+						{
+							"name": "DASF 43: Use access control lists",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Model assets leak",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 33: Manage credentials securely",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"ML Supply chain vulnerabilities",
+					"children": [
+						{
+							"name": "DASF 22: Build models with all representative, accurate and relevant data sources",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						},
+						{
+							"name": "DASF 45: Evaluate models",
+							"size": 10
+						},
+						{
+							"name": "DASF 47: Compare LLM outputs on set prompts",
+							"size": 10
+						},
+						{
+							"name": "DASF 48: Use hardened Runtime for Machine Learning",
+							"size": 10
+						},
+						{
+							"name": "DASF 52: Source code control",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Source code control attack",
+					"children": [
+						{
+							"name": "DASF 52: Source code control",
+							"size": 10
+						},
+						{
+							"name": "DASF 53: Third-party library control",
+							"size": 10
+						}
+					]
+				}
+			]
+		},
+		{	"name":"MODEL MANAGEMENT",
+			"children": [
+				{
+					"name":"Model attribution",
+					"children": [
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 28: Create model aliases, tags and annotations",
+							"size": 10
+						},
+						{
+							"name": "DASF 29: Build MLOps workflows",
+							"size": 10
+						},
+						{
+							"name": "DASF 51: Share data and AI assets securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Model theft",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						},
+						{
+							"name": "DASF 33: Manage credentials securely",
+							"size": 10
+						},
+						{
+							"name": "DASF 51: Share data and AI assets securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Model lifecycle without HITL (human-in-the-loop)",
+					"children": [
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 28: Create model aliases, tags and annotations",
+							"size": 10
+						},
+						{
+							"name": "DASF 29: Build MLOps workflows",
+							"size": 10
+						},
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Model inversion",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						}
+					]
+				}
+			]
+		},	
+		{
+			"name":"MODEL SERVING — INFERENCE REQUESTS",
+			"children": [
+				{
+					"name":"Prompt inject",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						},
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						},
+						{
+							"name": "DASF 46: Store and retrieve embeddings securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Model inversion",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						},
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						},
+						{
+							"name": "DASF 46: Store and retrieve embeddings securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Model breakout",
+					"children": [
+						{
+							"name": "DASF 34: Run models in multiple layers of isolation",
+							"size": 10
+						},
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Looped input",
+					"children": [
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Infer training data membership",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 28: Create model aliases, tags and annotations",
+							"size": 10
+						},
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						},
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						},
+						{
+							"name": "DASF 45: Evaluate models",
+							"size": 10
+						},
+						{
+							"name": "DASF 46: Store and retrieve embeddings securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Discover ML model ontology",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 28: Create model aliases, tags and annotations",
+							"size": 10
+						},
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						},
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						},
+						{
+							"name": "DASF 45: Evaluate models",
+							"size": 10
+						},
+						{
+							"name": "DASF 46: Store and retrieve embeddings securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Denial of service (DoS)",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						},
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						},
+						{
+							"name": "DASF 46: Store and retrieve embeddings securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"LLM hallucinations",
+					"children": [
+						{
+							"name": "DASF 25: Use retrieval augmented generation (RAG) with large language models (LLMs)",
+							"size": 10
+						},
+						{
+							"name": "DASF 26: Fine-tune large language models (LLMs)",
+							"size": 10
+						},
+						{
+							"name": "DASF 27: Pretrain a large language model (LLM)",
+							"size": 10
+						},
+						{
+							"name": "DASF 46: Store and retrieve embeddings securely",
+							"size": 10
+						},
+						{
+							"name": "DASF 49: Automate LLM evaluation",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Input resource control",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 46: Store and retrieve embeddings securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Accidental exposure of unauthorized data to models",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 16: Secure model features",
+							"size": 10
+						},
+						{
+							"name": "DASF 46: Store and retrieve embeddings securely",
+							"size": 10
+						}
+					]
+				}
+			]
+		},
+		{	"name":"MODEL SERVING — INFERENCE RESPONSE",
+			"children": [
+				{
+					"name":"Lack of audit and monitoring inference quality",
+					"children": [
+						{
+							"name": "DASF 35: Track model performance",
+							"size": 10
+						},
+						{
+							"name": "DASF 36: Set up monitoring alerts",
+							"size": 10
+						},
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Output manipulation",
+					"children": [
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Discover ML model ontology",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 28: Create model aliases, tags and annotations",
+							"size": 10
+						},
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						},
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Discover ML model family",
+					"children": [
+						{
+							"name": "DASF 1: SSO with IdP and MFA",
+							"size": 10
+						},
+						{
+							"name": "DASF 2: Sync users and groups",
+							"size": 10
+						},
+						{
+							"name": "DASF 3: Restrict access using IP access lists",
+							"size": 10
+						},
+						{
+							"name": "DASF 4: Restrict access using private link",
+							"size": 10
+						},
+						{
+							"name": "DASF 5: Control access to data and other objects",
+							"size": 10
+						},
+						{
+							"name": "DASF 24: Control access to models and model assets",
+							"size": 10
+						},
+						{
+							"name": "DASF 28: Create model aliases, tags and annotations",
+							"size": 10
+						},
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						},
+						{
+							"name": "DASF 37: Set up inference tables for monitoring and debugging models",
+							"size": 10
+						},
+						{
+							"name": "DASF 45: Evaluate models",
+							"size": 10
+						},
+						{
+							"name": "DASF 46: Store and retrieve embeddings securely",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Black-box attacks",
+					"children": [
+						{
+							"name": "DASF 30: Encrypt models",
+							"size": 10
+						},
+						{
+							"name": "DASF 31: Secure model serving endpoints",
+							"size": 10
+						},
+						{
+							"name": "DASF 32: Streamline the usage and management of various large language model (LLM) providers",
+							"size": 10
+						}
+					]
+				}
+			]
+		},	
+		{
+			"name":"OPERATIONS",
+			"children": [
+				{
+					"name":"Lack of MLOps — repeatable enforced standards",
+					"children": [
+						{
+							"name": "DASF 42: Employ data-centric MLOps and LLMOps",
+							"size": 10
+						},
+						{
+							"name": "DASF 44: Triggering actions in response to a specific event",
+							"size": 10
+						},
+						{
+							"name": "DASF 45: Evaluate models",
+							"size": 10
+						}
+					]
+				}
+			]
+		},
+		{	"name":"PLATFORM",
+			"children": [
+				{
+					"name":"Lack of vulnerability management",
+					"children": [
+						{
+							"name": "DASF 38: Platform security — vulnerability management",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Lack of penetration testing and bug bounty",
+					"children": [
+						{
+							"name": "DASF 39: Platform security — Incident Response Team",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Lack of incident response",
+					"children": [
+						{
+							"name": "DASF 39: Platform security — Incident Response Team",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Unauthorized privileged access",
+					"children": [
+						{
+							"name": "DASF 40: Platform security — internal access",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Poor security in the software development lifecycle",
+					"children": [
+						{
+							"name": "DASF 41: Platform security — secure SDLC",
+							"size": 10
+						}
+					]
+				},
+				{
+					"name":"Lack of compliance",
+					"children": [
+						{
+							"name": "DASF 50: Platform compliance",
+							"size": 10
+						}
+					]
+				}
+			]
+		}
+	]
+}
