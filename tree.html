@@ -120,7 +120,7 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-d3.json("data.json", function(error, flare) {
+d3.json("data/data.json", function(error, flare) {
 
   if (error) throw error;
 
