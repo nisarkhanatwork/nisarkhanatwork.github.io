@@ -1,30 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-TR8BPEPYF7"></script> 
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TR8BPEPYF7');
+</script> -->
     <meta charset="utf-8">
-
-    <title>MAPPING THE DATABRICKS AI SECURITY FRAMEWORK</title>
+    <title>Mapping AI risks to mitigations(FROM DATABRICKS AI SECURITY FRAMEWORK, DASF)</title>
 </head>
-    <style>
 
-	.node circle {
-	  fill: #fff;
-	  stroke: steelblue;
-	  stroke-width: 3px;
-	}
+<meta charset="utf-8">
+<style>
 
-	.node text { font: 12px sans-serif; }
+.node {
+  cursor: pointer;
+}
 
-	.link {
-	  fill: none;
-	  stroke: #ccc;
-	  stroke-width: 2px;
-	}
-	
-    </style>
-<div style="position: absolute; top: 10px; left: 10px; font: 15px Arial, sans-serif; color: #000000;">MAPPING THE DATABRICKS AI SECURITY FRAMEWORK</div>
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
 
-<div style="position: absolute; top: 40px; left: 10px;"><a href="https://www.databricks.com/sites/default/files/2024-03/databricks-ai-security-framework-dasf-whitepaper-v4-final.pdf" target="_blank" style="text-decoration: none; font: 10px Arial, sans-serif; color: #3E4348; cursor: pointer;">DOCUMENT</a></div>
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+  opacity: 0.5;
+}
+
+form {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+label {
+  display: block;
+}
+
+</style>
+
+<div style="position: absolute; top: 10px; left: 10px; font: 15px Arial, sans-serif; color: #000000;">MAPPING AI RISKS TO MITIGATIONS (FROM DATABRICKS AI SECURITY FRAMEWORK, DASF)</div>
+
+<div style="position: absolute; top: 40px; left: 10px;"><a href="https://www.databricks.com/sites/default/files/2024-03/databricks-ai-security-framework-dasf-whitepaper-v4-final.pdf" target="_blank" style="text-decoration: none; font: 10px Arial, sans-serif; color: #3E4348; cursor: pointer;">DASF DOCUMENT</a></div>
 
 <body><div style="position: absolute; top: 70px; left: 10px;"><button onclick="collapseAll()" style="background: none!important; border: none; padding: 0!important; font: 10px Arial, sans-serif; color: #4682B4; cursor: pointer;">COLLAPSE</button></div>
 
@@ -32,7 +62,7 @@
 <!--&lt;!&ndash;  <label><input type="radio" name="mode" value="uncollapse" checked> Uncollapse</label>&ndash;&gt;-->
 <!--  <label><input type="radio" name="mode" id="collapseOption"> Collapse</label>-->
 <!--</form>-->
-  
+
 <script>
 function expandAll() {
     expand(root);
@@ -50,12 +80,9 @@ function expand(d) {
 </script>
 
 
-<!-- load the d3.js library -->	
 <script src="https://d3js.org/d3.v3.min.js"></script>
-	
 <script>
 
-// ************** Generate the tree diagram	 *****************
 var margin = {top: 95, right: 120, bottom: 20, left: 120},
     width = 1200 - margin.right - margin.left,
     height = 8102 - margin.top - margin.bottom;
@@ -92,11 +119,10 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// load the external data
-d3.csv("data/tree_ai_sec_data.csv", function(error, flare) {
 
-// *********** Convert flat data into a nice tree ***************
- if (error) throw error;
+d3.json("data.json", function(error, flare) {
+
+  if (error) throw error;
 
   root = flare;
 
@@ -277,8 +303,5 @@ function expand(d) {
     if(d.children)
         d.children.forEach(expand);
 }
-
 </script>
-	
-  </body>
-</html>
+</body>
