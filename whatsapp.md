@@ -7,7 +7,7 @@ Abstract
 
 An example of a covert channel that can be found in a computer system at the lowest level is inside the CPU. In it, a sender will issue an instruction at some execution port eg., ALU to send a bit 1 and on the reciever side, the latency is measured to execute an instruction on the same port. If the latency is high, it means a 1-bit and 0-bit otherwise. This channel is used to stealthily transfer data between two processes of two different users.
 
-Indeed, covert channels are proliferating as new communication applications and communication infrastructures are built. Presence of a covert channel weakness in messenger applications can effect the operational security of organizations. And for private users, its potential for illicit use can lead to loss of trust. If proper countermeasures are taken, the misuse of the system can be prevented and the prevention of this makes an application a more Trusted System.
+Indeed, covert channels are proliferating as new communication applications and communication infrastructures are built. Presence of a covert channel weakness in messenger applications can effect the operational security of organizations. And for private users, its potential for wrong use can lead to loss of trust. If proper countermeasures are taken, the misuse of the system can be prevented and the prevention of this makes an application a more Trusted System.
 
 In this article we take one(out of many) feature(s) of an exmaple messgenger application, whatsapp, and confirm low bandwidth steganography channel in it.  The sender and receiver automation test scripts for Android phones are developed and the corresponding video of the scripts in action is also shown.
 
@@ -39,7 +39,7 @@ A glimpse of steganography in action:
 
 Impact:
 -------
-If this covert channel is taken care of, WhatsApp can be a more Trustworthy application for private (preventing illicit communication) and commercial communication(not involving in corporate espionage). Because ordinary private and commercial users cannot use/afford tapping mobile network data and its analysis under normal circumstances.
+If this covert channel is taken care of, WhatsApp can be a more Trustworthy application for private (preventing illegal communication) and commercial communication(not involving in corporate espionage). Because ordinary private and commercial users cannot use/afford tapping mobile network data and its analysis under normal circumstances.
 
 Conclusion:
 ----------
